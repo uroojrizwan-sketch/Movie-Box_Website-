@@ -194,3 +194,84 @@ button:hover {
         padding: 0 12px;
     }
 }
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        min-height: 75px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .logo img {
+        margin-left: 0;
+        width: 40px;
+    }
+
+    .logo h3 {
+        font-size: 12px;
+        
+    }
+
+    .search {
+        margin-left: auto;
+        max-width: 100%;
+    }
+
+    .search input {
+        width: 160px;
+        max-width: 100%;
+        margin-right: 0;
+        padding: 10px 14px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .logo {
+        gap: 6px;
+    }
+
+    .logo img {
+        width: 32px;
+    }
+
+    .logo h3 {
+        font-size: 15px;
+    }
+
+    .search input {
+        width: 125px;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        flex-wrap: nowrap;
+        gap: 8px;
+        min-width: 0;
+        
+    }
+
+    .logo img {
+        flex-shrink: 0;
+    }
+
+    .logo h3 {
+        margin: 0;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}
