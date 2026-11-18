@@ -6,43 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Zone</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9357/9357566.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/thumbnails/008/471/406/small/social-live-stream-linear-icon-web-streaming-badge-online-broadcast-news-thin-line-contour-button-symbol-isolated-outline-illustration-png.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="bg-black text-light">
+<body>
 
     <div class="navbar">
-        <div class="logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/9357/9357566.png" alt="Movie Zone">
-            <h3>MOVIE </h3><h3 style="color: rgb(239, 225, 79); margin-left: -10px; " >ZONE</h3>
+        <div class="logo" style="margin-left: 20px;" >
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/008/471/406/small/social-live-stream-linear-icon-web-streaming-badge-online-broadcast-news-thin-line-contour-button-symbol-isolated-outline-illustration-png.png"
+                alt="Movie Zone" >
+            <h3>MOVIE<span style="color: #ff4d5e;" >ZONE</span> </h3>    
         </div>
-        <div class="search">
-            <input  type="text" placeholder="Search Your Movie">
+        <div class="search" style="margin-right: 30px;" >
+            <input type="text" placeholder="Search your movie...">
         </div>
     </div>
 
-    <div class="cont my-3 text-center  " >
-        <button id="All" type="button" class="btn btn-primary mx-3 px-3 ">All</button>
-        <button id="Action" type="button" class="btn btn-secondary mx-3 px-3 ">Action</button>
-        <button id="Thriller" type="button" class="btn btn-success mx-3 px-3 ">Thriller</button>
-        <button id="Animation" type="button" class="btn btn-danger mx-3 px-3 ">Animation</button>
-        <button id="Horror" type="button" class="btn btn-warning mx-3 px-3 ">Horror</button>
-        <button id="Mystery" type="button" class="btn btn-info mx-3 px-3 ">Mystery</button>
-        <button id="Mind-Bending" type="button" class="btn btn-light mx-3 px-3 ">Mind-Bending</button>
-        <button id="Sci-Fi" type="button" class="btn btn-dark mx-3 px-3 ">Sci-Fi</button>
-    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">
+                <span class="hero-dot"></span>
+                YOUR CINEMATIC DESTINATION
+            </span>
+            <h1>
+                EVERY MOVIE HAS
+                <span>A STORY.</span>
+                FIND YOUR NEXT ONE.
+            </h1>
 
-    <div class="dom-cont"></div>
+            <p>
+                Explore unforgettable stories, discover hidden gems
+                and find movies that keep you hooked.
+            </p>
 
+            <a href="#movies" class="hero-btn" style="font-size: 15px;" >
+                Explore Movies <span>→</span>
+            </a>
 
+        </div>
 
+        <div class="hero-decoration">
+            <div class="hero-circle"></div>
+            <div class="hero-glow"></div>
+            <span class="hero-number">01</span>
+            <span class="hero-side-text">CINEMA • STORIES • EXPERIENCE</span>
+        </div>
 
+        <div class="hero-bottom">
+            <span>YOUR MOVIE JOURNEY STARTS HERE</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+        </div>
 
+    </section>
 
+    <section class="movie-section" id="movies">
+        <div class="section-heading">
+            <div>
+                <span class="section-label">EXPLORE COLLECTION</span>
+                <h2>Find Your <span>Genre</span></h2>
+                <p>Choose your mood. We've got a movie for it.</p>
+            </div>
+
+        </div>
+        <div class="cont my-3 text-center">
+            <button id="All" type="button"
+                class="btn btn-primary mx-3 px-3">All</button>
+
+            <button id="Action" type="button"
+                class="btn btn-secondary mx-3 px-3">Action</button>
+
+            <button id="Thriller" type="button"
+                class="btn btn-success mx-3 px-3">Thriller</button>
+
+            <button id="Animation" type="button"
+                class="btn btn-danger mx-3 px-3">Animation</button>
+
+            <button id="Horror" type="button"
+                class="btn btn-warning mx-3 px-3">Horror</button>
+
+            <button id="Mystery" type="button"
+                class="btn btn-info mx-3 px-3">Mystery</button>
+
+            <button id="Mind-Bending" type="button"
+                class="btn btn-light mx-3 px-3">Mind-Bending</button>
+
+            <button id="Sci-Fi" type="button"
+                class="btn btn-dark mx-3 px-3">Sci-Fi</button>
+
+        </div>
+        <div class="dom-cont"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">MOVIE <span>ZONE</span></div>
+        <p>Your next favorite movie is just one click away.</p>
+        <span class="footer-copy">© 2026 Movie Zone. All rights reserved.</span>
+    </footer>
 
     <script src="./index.js"></script>
-</body>
 
+</body>
 </html>
